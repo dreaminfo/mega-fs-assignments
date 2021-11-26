@@ -74,4 +74,5 @@ The space complexity is O(n). Cause (**wordList[]**) is used to loop. So the spa
 7. Line 41: 1 operations
 
 So, this get 1 + 2(n) + 3 + 4(n) + 1 = 2(n) + 4(n) + 5
-in the big O notation, it will be O(n) + O(n)
+
+In the big O notation, it will be O(n) + O(n)
