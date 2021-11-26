@@ -56,3 +56,11 @@ let tempTarget = target
 
       1. if that similar return results from **pairDisplay**.
       2. if not similar, check **pair[0]** is in second position of **wordList**, if condition is true, swap word position of **pairDisplay[0]** and **pairDisplay[1]** then return results, if condition is false return **None**
+
+### Space complexity analysis
+
+The space complexity is O(n). Cause (**wordList[]**) is used to loop. So the space grows in a linear with array length.
+
+### Time complexity analysis
+
+![Code image](./solve.png 'solve image')]
