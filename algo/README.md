@@ -4,7 +4,7 @@ Use [Node.js](https://nodejs.org/en/) to install.
 
 ### How to run
 
-1. Go to project directory **cd <your**path>/mega-fs-assignments/algo\*\*
+1. Go to project directory **cd <your_path>/mega-fs-assignments/algo**
 2. Run **npm install** for install project dependencies
 
 ```
