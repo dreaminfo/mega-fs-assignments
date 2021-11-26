@@ -63,4 +63,15 @@ The space complexity is O(n). Cause (**wordList[]**) is used to loop. So the spa
 
 ### Time complexity analysis
 
-![Code image](./solve.png 'solve image')]
+![Code image](./solve.jpeg 'solve image')
+
+1. Line 6: 1 operations
+2. Line 7: loop of **wordList** size n
+3. Line 8-10: 2 operations inside the for loop
+4. Line 23-25: 3 operations
+5. Line 27: loop of **wordList** size n
+6. Line 28-34: 4 operations inside the for loop
+7. Line 41: 1 operations
+
+So, this get 1 + 2(n) + 3 + 4(n) + 1 = 2(n) + 4(n) + 5
+in the big O notation, it will be O(n) + O(n)
