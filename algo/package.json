@@ -1,0 +1,14 @@
+{
+  "name": "algo",
+  "version": "1.0.0",
+  "description": "project for interview assignments in algorithm part",
+  "main": "solve.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "dreaminfo",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
