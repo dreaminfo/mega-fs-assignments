@@ -3,18 +3,6 @@ function solve(wordList, target) {
   if (!Array.isArray(wordList)) return 'None'
   if (wordList.length < 2) return 'None'
 
-  let countEmptyStr = 0
-  wordList.map((word) => {
-    if (word.length === 0) {
-      countEmptyStr++
-    }
-  })
-  if (
-    countEmptyStr === wordList.length ||
-    countEmptyStr === wordList.length - 1
-  )
-    return 'None'
-
   // Check target
   if (typeof target !== 'string') return 'None'
   if (target.length < 2) return 'None'
@@ -23,8 +11,18 @@ function solve(wordList, target) {
   let pair = []
   let pairDisplay = []
   let tempTarget = target
+  let countEmptyStr = 0
 
   for (let i = 0; i < wordList.length; i++) {
+    if (wordList[i].length === 0) {
+      countEmptyStr++
+      if (
+        countEmptyStr === wordList.length ||
+        countEmptyStr === wordList.length - 1
+      )
+        return 'None'
+    }
+
     if (target.includes(wordList[i])) {
       pair.push(wordList[i])
       pairDisplay.push(`"${wordList[i]}"`)
